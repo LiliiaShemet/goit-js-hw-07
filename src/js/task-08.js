@@ -11,7 +11,7 @@ function getAmount() {
 }
 
 function createBoxes(amount) {
-  let basicSize = 30;
+  let basicSize = boxes.lastElementChild != null ? boxes.lastElementChild.clientWidth + 10 : 30;
   let fragment = document.createDocumentFragment();
   for (let i = 0; i < amount; i++) {
     let size = basicSize + i * 10;
