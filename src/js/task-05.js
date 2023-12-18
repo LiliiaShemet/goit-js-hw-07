@@ -6,14 +6,14 @@ const refs = {
 refs.input.addEventListener('input', onInputChange);
 
 function onInputFocus() {
-  console.log('Получил фокус');
+  console.log('Отримав фокус');
 }
 function onInputBlur() {
-  console.log('Потерял фокус');
+  console.log('Втратив фокус');
 }
 function onInputChange(event) {
   if (event.currentTarget.value === '')
-    refs.nameLable.textContent = 'незнакомец'
+    refs.nameLable.textContent = 'незнайомець'
   else
     refs.nameLable.textContent = event.currentTarget.value;
 }
